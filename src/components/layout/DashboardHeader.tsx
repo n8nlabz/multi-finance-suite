@@ -17,6 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export const DashboardHeader = () => {
   return (
@@ -46,6 +47,9 @@ export const DashboardHeader = () => {
         </div>
 
         <div className="flex items-center gap-2 ml-auto">
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* Notifications */}
           <Button variant="ghost" size="icon" className="relative">
             <Bell className="h-5 w-5" />
